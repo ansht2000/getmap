@@ -1,4 +1,4 @@
-# cimp
+# getmap
 Simple command line tool to discover open tcp ports in a range of ip addresses 
 
 ## About
