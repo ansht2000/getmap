@@ -14,6 +14,9 @@
 typedef struct _ip_addrs {
     in_addr_t current;
     in_addr_t ending;
+    uint16_t port;
 } IPAddrs;
+
+in_addr_t generate(IPAddrs *addrs);
 
 int main(int argc, char **argv);
