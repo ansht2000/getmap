@@ -10,13 +10,8 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-// struct to hold the current and final specified IP addresses
-typedef struct _ip_addrs {
-    in_addr_t current;
-    in_addr_t ending;
-    uint16_t port;
-} IPAddrs;
-
+uint8_t *header(int s, in_addr_t ip);
+bool tcpConnect(in_addr_t ip, uint16_t port);
 in_addr_t generate();
 
 int main(int argc, char **argv);
